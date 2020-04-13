@@ -1,0 +1,24 @@
+CREATE SCHEMA `panaderia1` ;
+CREATE TABLE `panaderia1`.`CAJA` (
+  `id` INT NOT NULL,
+  `dinero` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+CREATE TABLE `panaderia1`.`MATERIALES` (
+  `ID` INT NOT NULL,
+  `Cantidad` VARCHAR(45) NOT NULL,
+  `Precio` VARCHAR(45) NOT NULL,
+  `Nombre` VARCHAR(45) NOT NULL,
+  `Imagen` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`ID`));
+CREATE TABLE `panaderia1`.`PRODUCTOS` (
+  `ID` INT NOT NULL,
+  `Nombre` VARCHAR(45) NOT NULL,
+  `Cantidad` VARCHAR(45) NOT NULL,
+  `Precio` VARCHAR(45) NOT NULL,
+  `Imagen` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`ID`));
+CREATE TABLE `panaderia1`.`USUARIOS` (
+  `Nombre` VARCHAR(45) NOT NULL,
+  `Tipo` VARCHAR(45) NOT NULL,
+  `Contraseña` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`Nombre`));
